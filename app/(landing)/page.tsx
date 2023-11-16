@@ -1,6 +1,8 @@
 import { LogosCoursera } from '@/components/logo'
 import { Footer } from './_components/footer'
 import { Header } from './_components/header'
+import { redirect } from 'next/navigation'
+import Link from 'next/link'
 
 export default function LandingPage() {
   return (
@@ -32,11 +34,15 @@ export default function LandingPage() {
               </span>
             </h1>
             <p className="text-lg leading-relaxed opacity-80">
-              The NextJS boilerplate with all you need to build your SaaS, AI
-              tool, or any other web app. From idea to production in 5 minutes.
+              The NextJS boilerplate with all you need to build your online
+              Course Platform.From idea to production in 5 minutes.
             </p>
             <div className="space-y-4">
-              <button className="btn btn-warning btn-wide">Get Started</button>
+              <Link href="/sign-in">
+                <button className="btn btn-warning btn-wide">
+                  Get Started
+                </button>
+              </Link>
             </div>
           </div>
         </section>
